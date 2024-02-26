@@ -1,0 +1,58 @@
+from tkinter import ttk
+from tkinter import *
+from  compl import *
+
+
+def remp():
+    #remplie=Tk()
+    #remplie.geometry("500x200")
+    #remplie.config(bg='green')
+    #remplie.title('Insertion des informations du Patient')
+    compassion1=Tk()
+    compassion1.geometry("600x200")
+    compassion1.config(bg="green")
+    #200c'est la longeur et 600 c'est la largeur
+    compassion1.title("Insertion des informations du Patient ")
+    id=Label(compassion1,text="ID du patient",bg='white')
+    id.grid(row=0,column=4)
+    id_entry=Entry(compassion1)
+    id_entry.grid(row=0,column=8)
+    nom=Label(compassion1,text="Nom du Patient",bg='white')
+    nom.grid(row=2,column=4)
+    nom_entry=Entry(compassion1)
+    nom_entry.grid(row=2,column=8)
+    cons_doc=Label(compassion1,text='A été reçu par de le DR.',bg='white')
+    cons_doc.grid(row=4,column=4)
+    doc=Entry(compassion1)
+    doc.grid(row=4,column=8)
+    type_service=Label(compassion1,text='Type de Service reçu ',bg='white')
+    type_service.grid(row=8,column=4)
+    maladie=Label(compassion1,text="La maladie qu'on vous a détecté ",bg="white")
+    maladie.grid(row=16,column=4)
+    maladie_entry=Entry(compassion1)
+    maladie_entry.grid(row=16,column=8)
+    traitement=Label(compassion1,text="Les Soins Reçu ",bg="white")
+    traitement.grid(row=32,column=4)
+    traitement_entry=Entry(compassion1)
+    traitement_entry.grid(row=32,column=8)
+    #service=Listbox(remplie)
+    #service.grid(row=8,column=8)
+    ment=ttk.Combobox(compassion1,values=options)
+    ment.grid(row=8,column=8)
+    date=Label(compassion1,text='La Date au quel tu as  reçu les soins ',bg="white")
+    date.grid(row=64, column=4)
+    day=ttk.Combobox(compassion1,text="Jour(Date)",values=options_jour,width=4,height=2)
+    day.grid(row=64,column=8)
+    month=ttk.Combobox(compassion1,values=options_mois,height=10,width=10)
+    month.grid(row=64,column=16)
+    year=ttk.Combobox(compassion1,height=10,width=10,values=options_annee)
+    year.grid(row=64, column=32)
+    #TODO je dois faire dans chaque case  que leur attribut apparaisse
+    sauv=Button(compassion1,text="Sauvergarde la Page",bg="white",)
+    sauv.grid(row=128,column=4)
+    quite=Button(compassion1,text="Quitter la Page",bg="white")
+    quite.grid(row=128,column=8)
+    #TODO Je dois essayer de configurer pour que la fonction donne pour le bouton quite
+    compassion1.mainloop()
+
+remp()
