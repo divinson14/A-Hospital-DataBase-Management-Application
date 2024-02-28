@@ -1,4 +1,4 @@
-# My-Project-
+# HOSPITAL-DATABASE-MANAGEMENT
 DataBase Management of a Hospital .
 Package used : Tkinter , Pillow , psycopg2 and cryptography.
 Database used : Postgresql.
