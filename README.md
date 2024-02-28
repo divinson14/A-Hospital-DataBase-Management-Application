@@ -1,6 +1,6 @@
 # My-Project-
-DataBase Management of a Hospital 
-Package used : Tkinter , Pillow , psycopg2 ,cryptography
-Database used : Postgresql
-Function available : Insert an information and search an information of the patient 
-#TODO Establish a  security pattern so as to protect personal information of patient 
+DataBase Management of a Hospital .
+Package used : Tkinter , Pillow , psycopg2 and cryptography.
+Database used : Postgresql.
+Function available :  Insert patient information and search patient information.
+#TODO  Establish a security framework to protect patients’ personal information.
